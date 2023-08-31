@@ -30,7 +30,7 @@ namespace HotelReservationSystem.Controllers
             {
                 ReservationID = reservationid,
                 CustomerID = $"{new Random().Next()}",
-                HotelID = $"Hotel {new Random().Next()}",
+                HotelID = $"HotelID {new Random().Next()}",
                 Checkin = DateTime.Now.AddDays(10),
                 Checkout = DateTime.Now.AddDays(10 + new Random().NextDouble() * 100),
                 NumberOfGuests = new Random().Next(5) + 1,
